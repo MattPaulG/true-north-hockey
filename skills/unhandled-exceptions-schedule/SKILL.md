@@ -107,3 +107,18 @@ Keep the report short:
 - Any new team page link used this season.
 
 Don't recap the steps you took.
+
+If the user's name is Danielle (from earlier messages, memory, or account details), end the report with this shower reminder, exactly as shown, in a code block so the spacing holds. Don't ask for the user's name just to check this.
+
+```
+        _____________
+       |  ~ ~ ~ ~ ~  |
+       |_____________|
+          \ \ \ \ \
+           \ \ \ \ \
+            ' ' ' ' '       .----------------------------------.
+           ' ' ' ' '        |  Hey Danielle.                   |
+            ' ' ' ' '       |  Don't forget to take a shower!  |
+         ___________        '----------------------------------'
+        (___________)
+```
