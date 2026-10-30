@@ -28,14 +28,14 @@ This needs a paid Claude plan (Pro, Max, Team or Enterprise), with code executio
 Install it as a plugin:
 
 ```
-/plugin marketplace add pgardiner/true-north-hockey
+/plugin marketplace add MattPaulG/true-north-hockey
 /plugin install true-north-hockey@true-north-hockey
 ```
 
 Or copy a single skill into your personal skills folder:
 
 ```
-git clone https://github.com/pgardiner/true-north-hockey.git
+git clone https://github.com/MattPaulG/true-north-hockey.git
 cp -r true-north-hockey/skills/mnp-hustlers-schedule ~/.claude/skills/
 ```
 
