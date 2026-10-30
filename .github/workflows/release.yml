@@ -1,6 +1,11 @@
 name: Release skills
 
+# Builds one uploadable zip per skill and attaches them to a GitHub release.
+# Runs when a release is published on GitHub, or when a v* tag is pushed.
+
 on:
+  release:
+    types: [published]
   push:
     tags:
       - "v*"
@@ -18,13 +23,13 @@ jobs:
       - name: Build skill zips
         run: bash scripts/package-skills.sh
 
-      - name: Create or update release
+      - name: Attach zips to the release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.ref_name }}
+          TAG: ${{ github.event.release.tag_name || github.ref_name }}
         run: |
-          if [[ "${GITHUB_REF_TYPE}" != "tag" ]]; then
-            echo "Not a tag; zips built but no release published."
+          if [[ "${GITHUB_EVENT_NAME}" == "workflow_dispatch" ]]; then
+            echo "Manual run: zips built, nothing published."
             exit 0
           fi
           if gh release view "$TAG" >/dev/null 2>&1; then
