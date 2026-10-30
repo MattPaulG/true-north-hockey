@@ -1,14 +1,12 @@
 name: Release skills
 
 # Builds one uploadable zip per skill and attaches them to a GitHub release.
-# Runs when a release is published on GitHub, or when a v* tag is pushed.
+# Runs when a release is published on GitHub. (No tag-push trigger: publishing
+# a release creates its tag, and a second trigger would race this one.)
 
 on:
   release:
     types: [published]
-  push:
-    tags:
-      - "v*"
   workflow_dispatch:
 
 permissions:

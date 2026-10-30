@@ -66,7 +66,7 @@ scripts/package-skills.sh      builds an uploadable zip per skill into dist/
 .github/workflows/release.yml  attaches the zips to each GitHub release
 ```
 
-To build the zips locally, run `scripts/package-skills.sh`. To publish them, create a release on GitHub (or push a tag such as `v1.1.0`); the release workflow builds the zips and attaches them to the release.
+To build the zips locally, run `scripts/package-skills.sh`. To publish them, publish a new release on GitHub with a tag such as `v1.1.0`; the release workflow builds the zips and attaches them to the release.
 
 ## Contributing
 
