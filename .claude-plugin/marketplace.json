@@ -1,0 +1,23 @@
+{
+  "name": "true-north-hockey",
+  "owner": {
+    "name": "Paul Gardiner"
+  },
+  "metadata": {
+    "description": "Claude skills that add True North Hockey Canada team schedules to your calendar.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "true-north-hockey",
+      "description": "Add MNP Hustlers and Unhandled Exceptions game schedules to Apple Calendar, Google Calendar, Outlook, or an .ics file.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/mnp-hustlers-schedule",
+        "./skills/unhandled-exceptions-schedule",
+        "./skills/tnhc-hockey-schedule"
+      ]
+    }
+  ]
+}
