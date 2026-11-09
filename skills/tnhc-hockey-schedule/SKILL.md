@@ -22,7 +22,7 @@ After the first run, suggest in one line that they ask Claude to remember their 
 
 | Team | Night | League | Division (2026/27) | Last known page (Winter 2026/27) |
 |---|---|---|---|---|
-| Unhandled Exceptions | Wednesday | 905 Winter | 905 Wednesday - Recreational Group 4 | https://truenorthhockey.com/Stats/StatsTeamStats?divteamID=1404 |
+| Unhandled Exceptions | Wednesday | 905 Winter | 905 Wednesday - Recreational Group 4B | https://truenorthhockey.com/Stats/StatsTeamStats?divteamID=1404 |
 | MNP Hustlers | Thursday | 416 Winter | 416 Thursday - Recreational Group 6 | https://truenorthhockey.com/Stats/StatsTeamStats?divteamID=1161 |
 
 **Each new season gets a new team page with a new team ID (`divteamID`)**, so a saved link only works for one season. Division group numbers can change too.
@@ -85,7 +85,7 @@ set day of sd to 4
 set hours of sd to 20
 set minutes of sd to 45
 set seconds of sd to 0
-tell application "Calendar" to make new event at end of events of calendar "Hockey" with properties {summary:"Unhandled Exceptions vs Snipers HC", start date:sd, end date:sd + 3600, location:"Gold Rink (Tire World) - CAA Centre, 7575 Kennedy Rd S, Brampton, ON L6W 4T2", description:"Away. 905 Wednesday - Recreational Group 4"}
+tell application "Calendar" to make new event at end of events of calendar "Hockey" with properties {summary:"Unhandled Exceptions vs Snipers HC", start date:sd, end date:sd + 3600, location:"Gold Rink (Tire World) - CAA Centre, 7575 Kennedy Rd S, Brampton, ON L6W 4T2", description:"Away. 905 Wednesday - Recreational Group 4B"}
 ```
 
 - If a call fails without an error message, the event may still have been created. Re-read the newest events before retrying.
