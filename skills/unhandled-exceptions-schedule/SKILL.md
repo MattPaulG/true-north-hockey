@@ -22,7 +22,7 @@ After the first run, suggest in one line that they ask Claude to remember their 
 - **Team:** Unhandled Exceptions
 - **League:** TNHC 905 league, which runs a **winter** season and a **summer** season. The team plays both.
 - **Night:** Wednesday in winter. The summer league may use a different night.
-- **Division (Winter 2026/27):** 905 Wednesday - Recreational Group 4. The group number can change from season to season.
+- **Division (Winter 2026/27):** 905 Wednesday - Recreational Group 4B. The group number can change from season to season.
 
 **Each new season gets a new team page with a new team ID (`divteamID`)**, so a saved link only works for one season. The site labels every league and team page with its season, e.g. "905 Winter" in the menu and "Winter 2026/27" on the team page. Use those labels to decide which season a page belongs to.
 
@@ -79,7 +79,7 @@ set day of sd to 4
 set hours of sd to 20
 set minutes of sd to 45
 set seconds of sd to 0
-tell application "Calendar" to make new event at end of events of calendar "Hockey" with properties {summary:"Unhandled Exceptions vs Snipers HC", start date:sd, end date:sd + 3600, location:"Gold Rink (Tire World) - CAA Centre, 7575 Kennedy Rd S, Brampton, ON L6W 4T2", description:"Away. 905 Wednesday - Recreational Group 4"}
+tell application "Calendar" to make new event at end of events of calendar "Hockey" with properties {summary:"Unhandled Exceptions vs Snipers HC", start date:sd, end date:sd + 3600, location:"Gold Rink (Tire World) - CAA Centre, 7575 Kennedy Rd S, Brampton, ON L6W 4T2", description:"Away. 905 Wednesday - Recreational Group 4B"}
 ```
 
 - If a call fails without an error message, the event may still have been created. Re-read the newest events before retrying.
